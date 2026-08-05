@@ -1,6 +1,6 @@
 #ifndef CHECKPOINT_H_
 #define CHECKPOINT_H_
-
+ 
 #include <stdint.h>
 
 /* ============================================================
