@@ -2,7 +2,7 @@
  * CC1101 Driver library for MSP430
  * Fully updated for native compilation under C++ class requirements.
  */
-
+ 
 #include "cc1101.h"
 #include "macros.h"
 #include "pins.h"
