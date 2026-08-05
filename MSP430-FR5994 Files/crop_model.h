@@ -1,6 +1,6 @@
 #ifndef CROP_MODEL_H
 #define CROP_MODEL_H
-
+ 
 #include <stdint.h>
 
 #ifdef __cplusplus
