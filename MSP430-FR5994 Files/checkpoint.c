@@ -2,7 +2,7 @@
 #include <stdint.h>
 #include <stddef.h>
 #include "checkpoint.h"
-
+ 
 /* ================= SRAM region to protect ================= */
 #define SRAM_START_ADDR   (0x1C00u)
 #define SRAM_SIZE_BYTES   (0x1000u)
