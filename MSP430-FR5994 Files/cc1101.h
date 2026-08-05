@@ -5,7 +5,7 @@
 #include <msp430.h>
 #include "macros.h"
 #include "pins.h"
-
+ 
 /*----------------------------------[standard]--------------------------------*/
 #ifndef TRUE
 #define TRUE  1
