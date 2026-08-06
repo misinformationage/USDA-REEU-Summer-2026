@@ -8,12 +8,12 @@ This project aims to utilize AI for a cheap, reliable, and sustainable system th
 This project utilized generative AI for coding and debugging throughout the 8-week program. The provided release of this project should be considered unstable and for research purposes only. Any derivation of this project should be hardened and reviewed by human professionals before any commercial implementation.
 
 ## 📑 Quick Links
-  - [Problem and Objectives](#problem-and-objectives)
-  - [System Overview](#system-overview)
-  - [Materials](#materials)
-  - [Implementation](#implementation)
-  - [Expected Results](#expected-results)
-  - [Troubleshooting](#troubleshooting)
+  - [Problem and Objectives](#-problem-and-objectives)
+  - [System Overview](#-system-overview)
+  - [Materials](#-materials)
+  - [Implementation](#-implementation)
+  - [Expected Results](#-expected-results)
+  - [Troubleshooting](#-troubleshooting)
   - [Acknowlegements](#acknowlegements)
 
 ## 🎯 Problem and Objectives 
