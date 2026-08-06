@@ -27,8 +27,9 @@ The system produced runs two AI models, with one crop recommendation model on th
 Nitrogen (mg/kg), Potassium (mg/kg), Phosphorus (mg/kg), Light-Level (lux), 
 pH ([H+]/mol dm^-3), Temperature (°C), Humidity (%), Soil Moisture (%)
 ```
+### System Diagram
 
-(System Diagram)
+<img width="1493" height="731" alt="System_Pinout drawio" src="https://github.com/user-attachments/assets/066c8527-af0a-4564-983a-5b8b31d72a5b" />
 
 ## 📦 Materials
 - [1] MSP430FR5994 
