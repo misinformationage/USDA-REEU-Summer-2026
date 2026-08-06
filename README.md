@@ -53,7 +53,7 @@ With the system setup with no errors during the flashing process, these are some
 
 ```
 --------------------------------------------
-TSL2591 Light -> Full Spectrum: 0xFFFF | Infrared: 0xFFFF
+TSL2591 Light -> Full Spectrum: 0x105B | Infrared: 0x30E
 Soil Moisture -> Raw ADC: 2655 | Calculated: 8%
 NPK Sensor -> N: 3 mg/kg | P: 1 mg/kg | K: 7 mg/kg
 pH Sensor -> Soil pH Value: 7.71
@@ -61,17 +61,14 @@ DHT22 Climate -> Temp: 22.5 C | Humidity: 60.4%
 Syst. Voltage -> 3300 mV
 AI Model -> Predicted Crop: Mango (Class 12)
 --------------------------------------------
-
-*Note: Example light sensor readings are simulated for partial hardware failure.
 ```
 
 On the Raspberry Pi side:
 
 <img width="1919" height="1027" alt="Pi4-Dashboard" src="https://github.com/user-attachments/assets/152c3603-4070-410a-a70c-616f5abda0b9" />
 
-
 ## 🧹 Troubleshooting
-Due to the nature of this system being multimodal, errors in deployment can show up in every single moving component and many different ways. To avoid as many of these errors as possible, it is highly recommended to follow the instructions provided as closely as possible. Whenever an error occurs, follow this general procedure for an easier diagnosis:
+Due to the nature of this system being multimodal, errors in deployment can show up in every single moving component and in many different ways. To avoid as many of these errors as possible, it is highly recommended to follow the instructions provided as closely as possible. Whenever an error occurs, follow this general procedure for an easier diagnosis:
 
 1. If CCS or the terminal provided an error, copy it and search it online. While obvious, many simple errors can be caught and fixed from online resources.
 
@@ -79,7 +76,7 @@ Due to the nature of this system being multimodal, errors in deployment can show
 
 3. Make sure your components' voltage and ground connections are in the proper power rails.
 
-4. Double check the GROUNDING of the components. I know this was just stated above, but it is such a simple yet time-consuming mistake to make that it is worth double and triple checking the GROUND. Again. CHECK THE GROUND WIRES.
+4. Double check the GROUNDING of the components. While this was just stated above, it is such a simple yet time-consuming mistake to make that it is worth double and triple checking the GROUND. Again, check the ground wires!
 
 5. If the software is running but no results are on your screen, make sure your serial terminal is active and tuned to the correct COM port and Baud Rate. The default Baud Rate is 9600 for the MSP430.
 
