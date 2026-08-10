@@ -159,6 +159,14 @@ For the TSL2591 Light Sensor:
 
 > ⚠️ Note that the TSL2591 Sensor from Adafruit may not come with the standouts soldered on. Do not attempt to connect the sensor if this is the case, as any improper connections may damage the sensor. Solder the standouts to the sensor first.
 
+### Progress Check: Predicting with the MSP430
+
+With the RS485 sensors programmed and all of the hardware connected to the MSP430, the code can be tested to verify the integrity of the system. With the 12V adapter plugged in and all components checked for solid connections, plug the MSP430 in. It is important that the main code is already flashed onto the MSP430 board, otherwise the last known code will run as soon as it is connected to the computer. Likely this last code would be the programmer, which would break the addressing of the RS485 sensors. Refer to [Step 3](#step-3-reprogram-the-ph-sensor) to correct this if it is the case. With the main code flashed and the system connected, connect the Serial Terminal with the following configuration:
+
+> Terminal : Serial | Baud rate : 9600 | Data size : 8 | Parity : none | Stop bits : 1 | Encoding: Default
+
+Once connected, press the RESET button on the MSP430 to see the entire bootup-sequence in the Serial Terminal. If everything is connected properly with no issues, the MSP430 will send many messages confirming the functionality of each sensor. After this it will repeatedly send a packet of information including the sensor readings, its internal voltage for the checkpointing functionality, and the results of the crop recommendation AI model. Refer to [#Expected-Results](#-expected-results) for a sample of what this packet may look like. The packet may also include error messages from the sensors if something is knocked loose, such as a timeout error from the DHT22 if it is not connected.
+
 ## 📊 Expected Results
 With the system setup with no errors during the flashing process, these are some results you can expect to get. On the MSP430 side:
 
