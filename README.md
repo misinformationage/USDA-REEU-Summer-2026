@@ -51,10 +51,12 @@ pH ([H+]/mol dm^-3), Temperature (°C), Humidity (%), Soil Moisture (%)
 The implementation of this project will require setup of hardware and software across two seperate platforms, with dozens of physical connections and parameters to match up. To make these instructions easier to follow, they will be broken up into sections. At the end of each section there will be a progress check to verify that everything is working as intended. If at any check there are errors, please refer to [#Troubleshooting](#-troubleshooting) for guidance. Refer to the following pinout guides when following the connections in the [system diagram](#system-diagram):
 
 <ins>**MSP430FR5994 Pinout:**</ins>
+
 <img width="991" height="493" alt="MSP430_Pinout" src="https://github.com/user-attachments/assets/16e0be92-e442-4a4d-88ec-2ad8567b0226" />
 
 <ins>**Raspberry Pi 4b Pinout**</ins>
-<img width="960" height="1070" alt="Raspi_4b_Pinout" src="https://github.com/user-attachments/assets/a440b297-0d6e-4508-8ba1-cca0c981d820" />
+
+<img width="1920" height="2139" alt="Raspi_4b_Pinout" src="https://github.com/user-attachments/assets/a440b297-0d6e-4508-8ba1-cca0c981d820" />
 
 
 ## MSP430FR5994 Software Setup
