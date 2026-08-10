@@ -108,7 +108,7 @@ To use this programmer these three config values will need to be changed based o
 
 When working with the MSP430 board, make sure it is always unplugged before connecting any pins, wires, or sensors. Following the [system diagram](#system-diagram), connect the following pins on the MAX485 Board:
 
-> DE → P4.2 | RE → P4.1 | DI → P6.0 | RO → P6.1 
+`DE → P4.2 | RE → P4.1 | DI → P6.0 | RO → P6.1`
 
 Next, make sure the 12V Power Adapter is unplugged. Once verified, check the wires of the PH sensor. There should be 4 total wires, each of varying colors. Note that the colors of each wire are not standard, and as such you must double-check the manual that came with the sensor to properly label each wire. The common convention assumed in this project is the following:
 
@@ -116,7 +116,7 @@ Next, make sure the 12V Power Adapter is unplugged. Once verified, check the wir
 
 Connect the voltage line to the positive end of the power adapter, and the ground line to the negative end of the power adapter. Connect the A and B lines to the A and B receptacles on the MAX485 Board. Using Dupont wires, connect one end into the negative end of the power adapter, and the other end into a breadboard. Using the breadboard, connect the GND pin of the MAX485 Board to the ground line of the power adapter. This ensures common ground between the RS485 sensors and the MAX485 Board, which is important for maintaining signal integrity. Connect the 3v3 pin on the right-side of the MSP430 to the breadboard powerrail. Connect the VCC pin on the MAX485 Board to this powerrail. Finally, use a small screwdriver to tighten the clamps on the MAX485 Board's A and B receptacles, as well as on the 12V adapter. 
 
-> 🛑 DO NOT USE 5V FOR ANY COMPONENTS IN THIS PROJECT, AS THEY CAN BE DAMAGED. 
+**🛑 DO NOT USE 5V FOR ANY COMPONENTS IN THIS PROJECT, AS THEY CAN BE DAMAGED.**
 
 ### Step 3: Reprogram the PH Sensor
 
@@ -140,6 +140,24 @@ Address update command sent successfully!
 Once the PH sensor is properly addressed, flash the main project from "main.cpp" back onto the MSP430 board. If this is not done, then the next time the board is connected to power with both RS485 sensors plugged in it will address both of them as `0x02`, and the NPK sensor will need to be re-addressed as `0x01` to fix this mistake.
 
 ### Step 4: Connect the TI-CC1101 Radio Module
+
+Following the [system diagram](#system-diagram), connect the following pins on the TI-CC1101 Radio Module:
+
+`GND → Ground Powerrail | CSN → P5.3 | SI → P5.0 | SO → P5.1 | SCLK → P5.2 | GDO2 → P8.2 | GDO0 → P8.1 | 3v3 → 3.3V Powerrail`
+
+For the DHT22 Temperature and Humidity Sensor:
+
+`GND → Gorund Powerrail | 3v3 → 3.3V Powerrail | Data → P1.3`
+
+For the Generic Soil Moisture Sensor:
+
+`GND → Gorund Powerrail | 3v3 → 3.3V Powerrail | Data → P1.2`
+
+For the TSL2591 Light Sensor:
+
+`GND → Gorund Powerrail | 3v3 → 3.3V Powerrail | SDA → P7.0 | SCL → P7.1`
+
+> Note that the TSL2591 Sensor from Adafruit may not come with the standouts soldered on. Do not attempt to connect the sensor if this is the case, as any improper connections may damage the sensor. Solder the standouts to the sensor first.
 
 ## 📊 Expected Results
 With the system setup with no errors during the flashing process, these are some results you can expect to get. On the MSP430 side:
