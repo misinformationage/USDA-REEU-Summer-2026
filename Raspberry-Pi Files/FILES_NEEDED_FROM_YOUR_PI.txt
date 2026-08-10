@@ -1,0 +1,26 @@
+FILES YOU NEED TO COPY FROM YOUR ORIGINAL RASPBERRY PI
+
+Required for the final runtime:
+1. cc1100_raspi.cpp
+2. cc1100_raspi.h
+3. predict_and_log.py
+4. nutrient_stress_hat.pkl
+5. dashboard_app.py
+
+Strongly recommended for reproducibility:
+6. requirements.txt
+   On the original Raspberry Pi, activate the same Python environment and run:
+       pip freeze > requirements.txt
+
+Do NOT copy/upload:
+- .venv/
+- prediction_logs/
+- system_logs/
+- .runtime/
+- radio_receiver.log
+- compiled RX_Demo_Sensors binary
+- __pycache__/
+
+Optional, only if you want to preserve the two-model training outputs:
+- environmental_health_hat.pkl
+- hat_model_metadata.json

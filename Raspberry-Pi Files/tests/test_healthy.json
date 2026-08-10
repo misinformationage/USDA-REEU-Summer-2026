@@ -1,0 +1,11 @@
+{
+  "Soil_Moisture": 60.0,
+  "Ambient_Temperature": 24.0,
+  "Soil_Temperature": 23.0,
+  "Humidity": 65.0,
+  "Light_Intensity": 700.0,
+  "Soil_pH": 6.5,
+  "Nitrogen_Level": 70.0,
+  "Phosphorus_Level": 55.0,
+  "Potassium_Level": 65.0
+}
