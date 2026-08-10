@@ -178,5 +178,3 @@ Due to the nature of this system being multimodal, errors in deployment can show
 
 ## Acknowlegements
 Thank you to [SpaceTeddy](https://github.com/SpaceTeddy/CC1101) for providing the CC1101 module code for the Raspberry Pi. Thank you to [abhra0897](https://github.com/abhra0897/msp430_cc1101_energia_v2) for providing the initial CC1101 module code for the MSP430. Finally, thank you to the mentors of the REEU program and their graduate students for their collaboration and guidance.
-<img width="628" height="380" alt="CCS_Project_Setup" src="https://github.com/user-attachments/assets/4f958321-6338-46fb-9ac6-d94ee04e7a98" />
-<img width="628" height="380" alt="CCS_Project_Setup" src="https://github.com/user-attachments/assets/83e3b8f6-1019-4f77-ba92-f69b9861fbcf" />
