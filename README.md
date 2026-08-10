@@ -147,17 +147,17 @@ Following the [system diagram](#system-diagram), connect the following pins on t
 
 For the DHT22 Temperature and Humidity Sensor:
 
-`GND → Gorund Powerrail | 3v3 → 3.3V Powerrail | Data → P1.3`
+`GND → Ground Powerrail | 3v3 → 3.3V Powerrail | Data → P1.3`
 
 For the Generic Soil Moisture Sensor:
 
-`GND → Gorund Powerrail | 3v3 → 3.3V Powerrail | Data → P1.2`
+`GND → Ground Powerrail | 3v3 → 3.3V Powerrail | Data → P1.2`
 
 For the TSL2591 Light Sensor:
 
-`GND → Gorund Powerrail | 3v3 → 3.3V Powerrail | SDA → P7.0 | SCL → P7.1`
+`GND → Ground Powerrail | 3v3 → 3.3V Powerrail | SDA → P7.0 | SCL → P7.1`
 
-> Note that the TSL2591 Sensor from Adafruit may not come with the standouts soldered on. Do not attempt to connect the sensor if this is the case, as any improper connections may damage the sensor. Solder the standouts to the sensor first.
+> ⚠️ Note that the TSL2591 Sensor from Adafruit may not come with the standouts soldered on. Do not attempt to connect the sensor if this is the case, as any improper connections may damage the sensor. Solder the standouts to the sensor first.
 
 ## 📊 Expected Results
 With the system setup with no errors during the flashing process, these are some results you can expect to get. On the MSP430 side:
