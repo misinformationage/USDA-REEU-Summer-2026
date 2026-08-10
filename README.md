@@ -11,7 +11,7 @@ This project utilized generative AI for coding and debugging throughout the 8-we
   - [Problem and Objectives](#-problem-and-objectives)
   - [System Overview](#-system-overview)
   - [Materials](#-materials)
-  - [Implementation](#%EF%B8%8F-implementation)
+  - [Implementation](#-implementation)
   - [Expected Results](#-expected-results)
   - [Troubleshooting](#-troubleshooting)
   - [Acknowlegements](#acknowlegements)
@@ -139,7 +139,11 @@ Address update command sent successfully!
 
 Once the PH sensor is properly addressed, flash the main project from "main.cpp" back onto the MSP430 board. If this is not done, then the next time the board is connected to power with both RS485 sensors plugged in it will address both of them as `0x02`, and the NPK sensor will need to be re-addressed as `0x01` to fix this mistake.
 
-### Step 4: Connect the TI-CC1101 Radio Module
+### Step 4: Connect the NPK Sensor
+
+With the programmer tool no longer flashed to the MSP430, unplug the board and loosen the receptacles holding down the RS485 wires of the PH sensor. Once again verify the color code of the NPK sensor with its included manual. Connect the A and B lines to the A and B receptacles of the MAX485 Board, connect the voltage line to the positive receptacle of the power adapter, and connect the ground line to the negative receptacle of the power adapter. Use a screwdriver to tighten down the clamps onto both sets of RS485 wires, making sure that all connections are solid and that no cables came loose. Verify that the Dupont wire creating the common ground with the MAX485 is still connected firmly.
+
+### Step 5: Connect the Remaining Hardware
 
 Following the [system diagram](#system-diagram), connect the following pins on the TI-CC1101 Radio Module:
 
