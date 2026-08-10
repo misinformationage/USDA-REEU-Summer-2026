@@ -54,7 +54,7 @@ The implementation of this project will require setup of hardware and software a
 <img width="991" height="493" alt="MSP430_Pinout" src="https://github.com/user-attachments/assets/16e0be92-e442-4a4d-88ec-2ad8567b0226" />
 
 <ins>**Raspberry Pi 4b Pinout**</ins>
-<img width="1920" height="2139" alt="Raspi_4b_Pinout" src="https://github.com/user-attachments/assets/a440b297-0d6e-4508-8ba1-cca0c981d820" />
+<img width="960" height="1070" alt="Raspi_4b_Pinout" src="https://github.com/user-attachments/assets/a440b297-0d6e-4508-8ba1-cca0c981d820" />
 
 
 ## MSP430FR5994 Software Setup
