@@ -11,7 +11,7 @@ This project utilized generative AI for coding and debugging throughout the 8-we
   - [Problem and Objectives](#-problem-and-objectives)
   - [System Overview](#-system-overview)
   - [Materials](#-materials)
-  - [Implementation](#-implementation)
+  - [Implementation](#%EF%B8%8F-implementation)
   - [Expected Results](#-expected-results)
   - [Troubleshooting](#-troubleshooting)
   - [Acknowlegements](#acknowlegements)
