@@ -126,7 +126,8 @@ Next, make sure the 12V Power Adapter is unplugged. Once verified, check the wir
 
 Connect the voltage line to the positive end of the power adapter, and the ground line to the negative end of the power adapter. Connect the A and B lines to the A and B receptacles on the MAX485 Board. Using Dupont wires, connect one end into the negative end of the power adapter, and the other end into a breadboard. Using the breadboard, connect the GND pin of the MAX485 Board to the ground line of the power adapter. This ensures common ground between the RS485 sensors and the MAX485 Board, which is important for maintaining signal integrity. Connect the 3v3 pin on the right-side of the MSP430 to the breadboard powerrail. Connect the VCC pin on the MAX485 Board to this powerrail. Finally, use a small screwdriver to tighten the clamps on the MAX485 Board's A and B receptacles, as well as on the 12V adapter. 
 
-**🛑 DO NOT USE 5V FOR ANY COMPONENTS IN THIS PROJECT, AS THEY CAN BE DAMAGED.**
+> [!CAUTION]
+> DO NOT USE 5V FOR ANY COMPONENTS IN THIS PROJECT, AS THEY CAN BE DAMAGED.
 
 ### Step 3: Reprogram the PH Sensor
 
@@ -171,7 +172,8 @@ For the TSL2591 Light Sensor:
 
 `GND → Ground Powerrail | 3v3 → 3.3V Powerrail | SDA → P7.0 | SCL → P7.1`
 
-> ⚠️ Note that the TSL2591 Sensor from Adafruit may not come with the standouts soldered on. Do not attempt to connect the sensor if this is the case, as any improper connections may damage the sensor. Solder the standouts to the sensor first.
+> [!WARNING]
+> The TSL2591 Sensor from Adafruit may not come with the standouts soldered on. Do not attempt to connect the sensor if this is the case, as any improper connections may damage the sensor. Solder the standouts to the sensor first.
 
 ### Progress Check: Predicting with the MSP430
 
